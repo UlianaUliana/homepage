@@ -10,7 +10,7 @@
 			background-color: Transparent;
 			height: 80px;
 			padding: 5;
-			margin-top:40px;
+			margin-top:30px;
 			vertical-align: top;
 			width: 70px;
 		}
@@ -18,6 +18,16 @@
 			display: block;
 			height: 70px;  
 			width: 50px;
+		}
+		.gifs {
+			margin: 50px;
+		}
+		.gif-pic {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			height: 200px;  
+			width: 250px;
 		}
 	</style>
 	
@@ -37,15 +47,6 @@
 								<button id="like" onClick="pictureChange()"><img src="./assets/images/like.png"></button>
 							</p>
 							
-							<script>
-								function pictureChange()
-								 {
-								  document.getElementById("firstImage").data="./assets/images/Trump2.jpg";
-								 }
-							   </script>
-							   
-							   
-
 						</div>
 						<div class="thirteen wide column">
 							<div class="stackable grid">
@@ -505,12 +506,29 @@
 									<span class="tag">GROW A TREE</span>
 									<span class="tag">BUILD TRUMP AIRPORT</span>
 								</p>
-							  </section>
+							</section>
+							<section>
+								<div class="gifs">
+									<img class="gif-pic" src="assets/images/golf.gif"  alt="golf gif">
+								</div>
+								<div class="gifs">
+									<img class="gif-pic" src="assets/images/tree.gif"  alt="tree gif">
+								</div>
+								<div class="gifs">
+									<img class="gif-pic" src="assets/images/big.gif" alt="big mac gif">
+								</div>
+							</section>
 						</div>
 					</div>
 				</div>
 			</div>
 		</article>
 	</main>
+	<script>
+		function pictureChange()
+		 {
+		  document.getElementById("firstImage").data="./assets/images/Trump2.jpg";
+		 }
+	   </script>
   </body>
 </html>
