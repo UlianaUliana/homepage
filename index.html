@@ -4,6 +4,23 @@
     <meta charset="UTF-8" />
     <title>Résumé</title>
 	<link rel="stylesheet" href="https://volodymyrkushnir.com/assets/stylesheets/base.css">
+	<style>
+		button {
+			display: inline-block;
+			background-color: Transparent;
+			height: 80px;
+			padding: 5;
+			margin-top:40px;
+			vertical-align: top;
+			width: 70px;
+		}
+		#like img {
+			display: block;
+			height: 70px;  
+			width: 50px;
+		}
+	</style>
+	
   </head>
   <body>
     <main>
@@ -14,8 +31,21 @@
 						<div class="three wide center aligned column">
 							<!-- Avatar -->
 							<div class="avatar-wrapper">
-								<object class="avatar" data="./assets/images/Trump.jpg" role="img" aria-label="My profile picture"></object>
-							  </div>
+								<object id="firstImage" class="avatar" data="./assets/images/Trump.jpg" role="img" aria-label="My profile picture" ></object>
+							</div>
+							<p>
+								<button id="like" onClick="pictureChange()"><img src="./assets/images/like.png"></button>
+							</p>
+							
+							<script>
+								function pictureChange()
+								 {
+								  document.getElementById("firstImage").data="./assets/images/Trump2.jpg";
+								 }
+							   </script>
+							   
+							   
+
 						</div>
 						<div class="thirteen wide column">
 							<div class="stackable grid">
