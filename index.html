@@ -8,16 +8,20 @@
 		button {
 			display: inline-block;
 			background-color: Transparent;
-			height: 80px;
+			height: 85px;
+			width: 95px;
 			padding: 5;
 			margin-top:30px;
 			vertical-align: top;
-			width: 70px;
 		}
 		#like img {
 			display: block;
 			height: 70px;  
-			width: 50px;
+			width: 70px;
+		}
+		#like img:hover {
+			height: 75px;  
+			width: 75px;
 		}
 		.gifs {
 			margin: 50px;
@@ -30,16 +34,23 @@
 			width: 250px;
 		}
 		.additional {
-			line-height:3;
+			margin-top: 20px;
+		}
+		[class*="tags small bulleted"] {
+			line-height: 1.6;
+			text-align: justify;
+		}
+		small {
+			font-weight: bold;
 		}
 	
 	</style>
 	
   </head>
   <body>
-    <main>
+    <main style="background-image: url('./assets/images/flag2.gif');">
 		<article>
-			<div class="page" style="border-color: midnightblue;">
+			<div class="page" style="border-color: #800020;">
 				<div class="stackable grid">
 					<div class="row">
 						<div class="three wide center aligned column">
@@ -52,13 +63,13 @@
 							</p>
 							
 						</div>
-						<div class="thirteen wide column">
+						<div class="thirteen wide column" style="text-align: center;">
 							<div class="stackable grid">
-								<div class="sixteen wide column">
+								<div class="sixteen wide column" style="line-height: 1.6">
 									<!-- Name, job, contacts -->
 									<h1 class="name">Donald Trump</h1>
-									<div class="job">President of United States of America</div>
-									<ul class="contacts">
+									<div class="job" style="font-size: 18px;">President of United States of America</div>
+									<ul class="contacts" style="margin-left: 95px;">
 										<li>
 											<a href="https://www.fb.com/DonaldTrump" rel="author" class="facebook">
 												<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -84,7 +95,7 @@
 											</a>
 										</li>
 										<li>
-											<a href="realDonaldTrump@whitehouse.gov" rel="author" class="email">
+											<a href="mailto:realDonaldTrump@whitehouse.gov" rel="author" class="email">
 												<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
 													<path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
 												</svg>
@@ -109,7 +120,7 @@
 							<div class="fat divider"></div>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row" style="text-align: justify;">
 						<div class="ten wide column">
 							<!-- Experience -->
 							<h3>Experience</h3>
@@ -406,7 +417,7 @@
 								<h3>LANGUAGES</h3>
 								<p class="tags small">
 								  <span class="language" lang="en">🇺🇸 ENGLISH</span>
-								  <a href="/ru-ru" hreflang="ru" rel="alternate" class="language" lang="ru">🇷🇺 <span>РУССКИЙ</span></a> </p>
+								  <a href="https://en.wikipedia.org/wiki/Russian_language" hreflang="ru" rel="alternate" class="language" lang="ru">🇷🇺 <span>РУССКИЙ</span></a> </p>
 							</section>
 							<!-- Skills -->
 							<section>
@@ -509,7 +520,7 @@
 							  </section>
 							<!-- Wants -->
 							<section>
-								<h3>Wants&#x1f97a;</h3>
+								<h3>Wants&#x1F609;</h3>
 								<p class="tags small bulleted">
 									<span class="tag">BE HEALTHY</span>
 									<span class="tag">HAVE A TASTE</span>
@@ -521,6 +532,7 @@
 								</p>
 							</section>
 							<section>
+								<h3>Some more stuff</h3>
 								<div class="gifs">
 									<img class="gif-pic" src="assets/images/golf.gif"  alt="golf gif">
 								</div>
@@ -531,6 +543,9 @@
 									<img class="gif-pic" src="assets/images/big.gif" alt="big mac gif">
 								</div>
 							</section>
+							<div>
+								<blockquote style="text-align: center;"><b><i>Life is too short to worry about what others say or think about you&#x1F609;</i></b></blockquote>
+							</div>
 						</div>
 					</div>
 				</div>
